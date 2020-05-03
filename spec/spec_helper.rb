@@ -33,5 +33,5 @@ Capybara.configure do |config|
   #sem indicar o chrome, ele usa o firefox como default
 
   config.default_max_wait_time = 15
-  config.app_host = ""
+  config.app_host = "https://training-wheels-protocol.herokuapp.com"
 end
