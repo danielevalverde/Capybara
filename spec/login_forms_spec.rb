@@ -1,6 +1,6 @@
 describe "Forms" do
     it "login com sucesso" do
-        visit "https://training-wheels-protocol.herokuapp.com/login"
+        visit "/login"
 
         fill_in 'userId' , with: 'stark'
         fill_in 'password', with: 'jarvis!'

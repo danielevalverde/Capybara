@@ -1,7 +1,7 @@
 describe "Drag and Drop", :drop do
     #to work with dragable
     before(:each) do
-        visit "https://training-wheels-protocol.herokuapp.com/drag_and_drop"
+        visit "/drag_and_drop"
     end
 
     it 'team stark' do

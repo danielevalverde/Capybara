@@ -3,7 +3,7 @@ describe "Upload", :upload do
     before(:each) do
         @file = Dir.pwd + '/spec/fixtures/file.txt'
         @image = Dir.pwd + '/spec/fixtures/erza.jpg'
-        visit "https://training-wheels-protocol.herokuapp.com/upload"
+        visit "/upload"
     end
 
     it 'Upload com arquivo de texto' do

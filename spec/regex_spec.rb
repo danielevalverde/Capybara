@@ -1,7 +1,7 @@
 describe "Regex", :regex do
 
     before(:each) do
-        visit "https://training-wheels-protocol.herokuapp.com/hovers"
+        visit "/hovers"
     end
 
     it "begin with content" do
