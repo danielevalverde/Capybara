@@ -1,2 +1,3 @@
 # Capybara
-Repository dedicated to learning Capybara
+##Repository dedicated to starting the studies about the capybara framework 
+- 
