@@ -1,4 +1,4 @@
-describe "Alert de Js", :alerts do
+describe "Js Alerts", :alerts do
 
     before(:each) do
         visit "/javascript_alerts"

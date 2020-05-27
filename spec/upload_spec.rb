@@ -19,10 +19,7 @@ describe "Upload", :upload do
         expect(find("#uploaded-file").text).to eq 'erza.jpg'
         img = find ("#new-image")
         expect(img[:src]).to include "erza.jpg"
-
     end
-
-    
      
     after(:each) do 
         sleep 2
