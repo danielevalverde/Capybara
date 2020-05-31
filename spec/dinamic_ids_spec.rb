@@ -1,4 +1,4 @@
-describe 'Dinamic id', :ids_dinamicos do
+describe 'Dinamic id', :dinamic_ids do
     before(:each) do
       visit "/access"
     end
