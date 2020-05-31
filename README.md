@@ -4,4 +4,4 @@
 - to run the tests is possibly specified the file like:
  rspec spec\login_form_spec.rb
 - or putting a tag on one file or test: 
-rpsec --tag @ids_dinamicos
+rpsec --tag @drop 
