@@ -2,7 +2,6 @@ describe "Forms Login", :login2 do
 
     before(:each) do
         visit "/login2"
-
     end
 
     it "login com data de nascimento" do
@@ -24,8 +23,6 @@ describe "Forms Login", :login2 do
 
        click_button 'Login'
        expect(find("#flash").text).to include "Olá, Tony Stark. Você acessou a área logada!"
-
-
 
     end
 

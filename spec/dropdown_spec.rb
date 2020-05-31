@@ -1,25 +1,25 @@
-describe "caixa de opções" , :dropdown do
+describe "options box" , :dropdown do
 
-    it "item específico simples" do
+    it "simple specif item" do
         visit "/dropdown"
         select("Loki", from: 'dropdown')
         #select ( "opção", from "elemento")
-        #funciona pra dropdowns que possuem id
+        #just work to dropdowns that have id
         sleep 3
     end
 
-    it "item específico with find" do
+    it "simple specif item with find" do
         visit "/dropdown"
         dropdown_list = find('.avenger-list')
-        dropdown_list.find('option' , text: "Scott Lang").select_option # vai fazer a busca dentro do elemento retornado 
+        dropdown_list.find('option' , text: "Scott Lang").select_option # go search inside the returned element  
         sleep 3
     end
 
     it "find any item" , :sample do 
         visit "/dropdown"
         dropdown_list = find('.avenger-list')
-        dropdown_list.all('option').sample.select_option # o method all retorna um array de elementos
-        #sample retorna um elemento aleatório dentro do array . Nativo do ruby
+        dropdown_list.all('option').sample.select_option # the method all returns an array 
+        #sample returns an random element from array. native method ruby 
         sleep 2
     end
 end

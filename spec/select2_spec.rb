@@ -16,9 +16,7 @@ describe "Select2", :select2 do
             find('.select2-search__field').set 'Chris Rock'
             sleep 1
             find('.select2-results__option').click
-            
         end
-    
      
         after(:each) do 
             sleep 2
@@ -44,8 +42,6 @@ describe "Select2", :select2 do
                 select_actor(a)
             end
         end
-
-       
     
         after(:each) do 
             sleep 2

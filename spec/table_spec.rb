@@ -3,33 +3,33 @@ describe 'Tabelas', :tabs, :smoke do
       visit 'http://training-wheels-protocol.herokuapp.com/tables'
     end
   
-    it 'deve exibir o salario do stark' do
+    it 'should show the salary of Stark' do
       atores = all('table tbody tr')
       stark = atores.detect { |ator| ator.text.include?('Robert Downey Jr') }
   
       expect(stark.text).to include '10.000.000'
     end
   
-    it 'deve exibir o salario do vin diesel' do
+    it 'should show the salary of Vin diesel' do
       diesel = find('table tbody tr', text: '@vindiesel')
       expect(diesel).to have_content '10.000.000'
     end
   
-    it 'deve exibir o filme velozes' do
+    it 'should show the salary movie: Fast & Furious' do
       diesel = find('table tbody tr', text: '@vindiesel')
       movie = diesel.all('td')[2].text # td = data table
   
       expect(movie).to eql 'Fast & Furious'
     end
   
-    it 'deve exibir o insta do Chris Evans' do
+    it 'should show the instagram of: Chris Evans' do
       evans = find('table tbody tr', text: 'Chris Evans')
       insta = evans.all('td')[4].text
   
       expect(insta).to eql '@teamcevans'
     end
   
-    it 'deve selecionar Chris Prat para remoção' do
+    it 'should select Chris Prat to remove' do
       prat = find('table tbody tr', text: 'Chris Prat')
       prat.find('a', text: 'delete').click
   
@@ -39,7 +39,7 @@ describe 'Tabelas', :tabs, :smoke do
       page.driver.browser.switch_to.alert.accept
     end
   
-    it 'deve selecionar Chris Prat para edição' do
+    it 'should select Chris Prat to edit' do
       prat = find('table tbody tr', text: 'Chris Prat')
       prat.find('a', text: 'edit').click
   

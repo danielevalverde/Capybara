@@ -1,17 +1,16 @@
-describe "Botões de radios", :radio do
+describe "radio buttoms", :radio do
 
     before(:each) do
         visit "/radios"
     end
 
-    it 'Seleção por id' do
+    it 'select by id' do
         choose('cap')
     end
 
-    it 'Seleção por find e css selector' do
+    it 'select by find and css selector' do
         find('input[value=guardians]').click
     end
-    
      
     after(:each) do 
         sleep 2

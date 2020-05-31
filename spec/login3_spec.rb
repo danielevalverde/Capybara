@@ -2,21 +2,18 @@ describe "Forms Login", :login3 do
 
     before(:each) do
         visit "/access"
-
     end
 
-    it "login com data de nascimento" do
-        #trabalhando com escopos 
-        #temos dois forms nessa página, um de login e um de cadastro e os campos possuem id's dinamicos e mesmos names
+    it "login with date of birth" do
+        #working with scopes
+        # has two login forms on this page
         # login_form = find("#login")
-
         # login_form.find('input[name=username]').set 'stark'
         # login_form.find('input[name=password]').set 'jarvis!'
-
         # login_form.fill_in 'username' , with: 'stark'
         # login_form.fill_in 'password' , with: 'jarvis!'
 
-        within("#login") do # vai fazer a busca somente dentro desse escopo
+        within("#login") do # go search only inside this scope 
             find('input[name=username]').set 'stark'
             find('input[name=password]').set 'jarvis!'
             click_button 'Entrar'
@@ -25,8 +22,8 @@ describe "Forms Login", :login3 do
 
     end
 
-    it "cadastro" , :cadastro do
-        within("#signup") do # vai fazer a busca somente dentro desse escopo
+    it "sign up" , :cadastro do
+        within("#signup") do # go search only inside this scope 
             find('input[name=username]').set 'starkinho'
             find('input[name=password]').set 'jarvis!'
             click_link 'Criar Conta'

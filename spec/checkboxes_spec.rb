@@ -4,19 +4,19 @@ describe "Caixas de Seleção", :checkbox do
         visit "/checkboxes"
     end
 
-    it "marcando um opção" do
+    it "checking an option" do
         check("thor")
     end
 
-    it "desmarcando um opção" do
+    it "unchecking an option" do
         uncheck("antman")
     end
 
-    it "marcando com option true" do
+    it "checking an option as true" do
         find('input[value=cap]').set(true)
     end
 
-    it "desmarcando com option false" do
+    it "checking an option as false" do
         find('input[value=guardians]').set(false)
     end
     

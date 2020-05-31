@@ -7,7 +7,6 @@ describe "Mouse Hover", :hovers do
     it "when i pass the mouse under an item" do
         card = find("img[alt=Blade]")
         card.hover
-
         expect(page).to have_content 'Nome: Blade'
     end
 

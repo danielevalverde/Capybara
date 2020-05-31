@@ -1,5 +1,5 @@
 describe "Forms" do
-    it "login com sucesso" do
+    it "login with sucess" do
         visit "/login"
 
         fill_in 'userId' , with: 'stark'
@@ -12,7 +12,7 @@ describe "Forms" do
 
        expect(find("#flash").text).to include "Olá, Tony Stark. Você acessou a área logada!"
 
-       expect(find("#flash")).to have_content "Olá, Tony Stark. Você acessou a área logada!" #nativo do capybara
+       expect(find("#flash")).to have_content "Olá, Tony Stark. Você acessou a área logada!" #native from capybara
        
     end
 end
